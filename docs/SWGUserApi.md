@@ -24,8 +24,7 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-
-SWGUser* *body = SwaggerClient.SWGUser*(); // SWGUser* | Created user object
+SWGUser* *body = SwaggerClient.SWGUser*(); // Created user object
 
 @try
 { 
@@ -77,8 +76,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-
-NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
+NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // List of user object
 
 @try
 { 
@@ -130,8 +128,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-
-NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
+NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // List of user object
 
 @try
 { 
@@ -182,14 +179,13 @@ This can only be done by the logged in user.
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 // Configure HTTP basic authorization (authentication scheme: test_http_basic)
 [apiConfig setUsername:@"YOUR_USERNAME"];
 [apiConfig setPassword:@"YOUR_PASSWORD"];
 
 
-NSString* *username = @"username_example"; // NSString* | The name that needs to be deleted
+NSString* *username = SwaggerClient.NSString*(); // The name that needs to be deleted
 
 @try
 { 
@@ -241,8 +237,7 @@ Get user by user name
 ### Example 
 ```objc
 
-
-NSString* *username = @"username_example"; // NSString* | The name that needs to be fetched. Use user1 for testing.
+NSString* *username = SwaggerClient.NSString*(); // The name that needs to be fetched. Use user1 for testing.
 
 @try
 { 
@@ -297,9 +292,8 @@ Logs user into the system
 ### Example 
 ```objc
 
-
-NSString* *username = @"username_example"; // NSString* | The user name for login
-NSString* *password = @"password_example"; // NSString* | The password for login in clear text
+NSString* *username = SwaggerClient.NSString*(); // The user name for login
+NSString* *password = SwaggerClient.NSString*(); // The password for login in clear text
 
 @try
 { 
@@ -357,7 +351,6 @@ Logs out current logged in user session
 ```objc
 
 
-
 @try
 { 
     SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
@@ -405,9 +398,8 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-
-NSString* *username = @"username_example"; // NSString* | name that need to be deleted
-SWGUser* *body = SwaggerClient.SWGUser*(); // SWGUser* | Updated user object
+NSString* *username = SwaggerClient.NSString*(); // name that need to be deleted
+SWGUser* *body = SwaggerClient.SWGUser*(); // Updated user object
 
 @try
 { 

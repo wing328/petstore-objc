@@ -22,8 +22,7 @@ For valid response try integer IDs with value < 1000. Anything above 1000 or non
 ### Example 
 ```objc
 
-
-NSString* *orderId = @"orderId_example"; // NSString* | ID of the order that needs to be deleted
+NSString* *orderId = SwaggerClient.NSString*(); // ID of the order that needs to be deleted
 
 @try
 { 
@@ -74,7 +73,6 @@ A single status value can be provided as a string
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: test_api_client_id)
@@ -88,7 +86,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-NSString* *status = @"placed"; // NSString* | Status value that needs to be considered for query (default to placed)
+NSString* *status = SwaggerClient.NSString*(); // Status value that needs to be considered for query (default to placed)
 
 @try
 { 
@@ -142,7 +140,6 @@ Returns a map of status codes to quantities
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: api_key)
@@ -201,7 +198,6 @@ Returns an arbitrary object which is actually a map of status codes to quantitie
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: api_key)
@@ -260,7 +256,6 @@ For valid response try integer IDs with value <= 5 or > 10. Other values will ge
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: test_api_key_header)
@@ -274,7 +269,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"test_api_key_query"];
 
 
-NSString* *orderId = @"orderId_example"; // NSString* | ID of pet that needs to be fetched
+NSString* *orderId = SwaggerClient.NSString*(); // ID of pet that needs to be fetched
 
 @try
 { 
@@ -328,7 +323,6 @@ Place an order for a pet
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: test_api_client_id)
@@ -342,7 +336,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-SWGOrder* *body = SwaggerClient.SWGOrder*(); // SWGOrder* | order placed for purchasing the pet
+SWGOrder* *body = SwaggerClient.SWGOrder*(); // order placed for purchasing the pet
 
 @try
 { 

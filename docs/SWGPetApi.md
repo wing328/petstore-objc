@@ -26,14 +26,13 @@ Add a new pet to the store
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* *body = SwaggerClient.SWGPet*(); // SWGPet* | Pet object that needs to be added to the store
+SWGPet* *body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
 
 @try
 { 
@@ -84,14 +83,13 @@ Fake endpoint to test byte array in body parameter for adding a new pet to the s
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSString* *body = B; // NSString* | Pet object in the form of byte array
+NSString* *body = @"B"; // Pet object in the form of byte array
 
 @try
 { 
@@ -142,15 +140,14 @@ Deletes a pet
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // NSNumber* | Pet id to delete
-NSString* *apiKey = @"apiKey_example"; // NSString* | 
+NSNumber* *petId = @789; // Pet id to delete
+NSString* *apiKey = SwaggerClient.NSString*(); // 
 
 @try
 { 
@@ -203,14 +200,13 @@ Multiple status values can be provided with comma separated strings
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSArray* /* NSString */ *status = @[@"available"]; // NSArray* /* NSString */ | Status values that need to be considered for query (default to available)
+NSArray* /* NSString */ *status = @[SwaggerClient.NSString*()]; // Status values that need to be considered for query (default to available)
 
 @try
 { 
@@ -264,14 +260,13 @@ Muliple tags can be provided with comma seperated strings. Use tag1, tag2, tag3 
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSArray* /* NSString */ *tags = @[@"tags_example"]; // NSArray* /* NSString */ | Tags to filter by
+NSArray* /* NSString */ *tags = @[SwaggerClient.NSString*()]; // Tags to filter by
 
 @try
 { 
@@ -325,7 +320,6 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: api_key)
@@ -337,7 +331,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // NSNumber* | ID of pet that needs to be fetched
+NSNumber* *petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -391,7 +385,6 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: api_key)
@@ -403,7 +396,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // NSNumber* | ID of pet that needs to be fetched
+NSNumber* *petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -457,7 +450,6 @@ Returns a pet when ID < 10.  ID > 10 or nonintegers will simulate API error cond
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure API key authorization: (authentication scheme: api_key)
@@ -469,7 +461,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // NSNumber* | ID of pet that needs to be fetched
+NSNumber* *petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -523,14 +515,13 @@ Update an existing pet
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* *body = SwaggerClient.SWGPet*(); // SWGPet* | Pet object that needs to be added to the store
+SWGPet* *body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
 
 @try
 { 
@@ -581,16 +572,15 @@ Updates a pet in the store with form data
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSString* *petId = @"petId_example"; // NSString* | ID of pet that needs to be updated
-NSString* *name = @"name_example"; // NSString* | Updated name of the pet
-NSString* *status = @"status_example"; // NSString* | Updated status of the pet
+NSString* *petId = SwaggerClient.NSString*(); // ID of pet that needs to be updated
+NSString* *name = SwaggerClient.NSString*(); // Updated name of the pet
+NSString* *status = SwaggerClient.NSString*(); // Updated status of the pet
 
 @try
 { 
@@ -645,16 +635,15 @@ uploads an image
 
 ### Example 
 ```objc
-
 SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 // Configure OAuth2 access token for authorization: (authentication scheme: petstore_auth)
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // NSNumber* | ID of pet to update
-NSString* *additionalMetadata = @"additionalMetadata_example"; // NSString* | Additional data to pass to server
-NSURL* *file = SwaggerClient.NSURL*(); // NSURL* | file to upload
+NSNumber* *petId = @789; // ID of pet to update
+NSString* *additionalMetadata = SwaggerClient.NSString*(); // Additional data to pass to server
+NSURL* *file = SwaggerClient.NSURL*(); // file to upload
 
 @try
 { 
