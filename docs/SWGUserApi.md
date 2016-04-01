@@ -78,7 +78,7 @@ Creates list of users with given input array
 ```objc
 
 
-NSArray<SWGUser>* *body = [SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
+NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
 
 @try
 { 
@@ -131,7 +131,7 @@ Creates list of users with given input array
 ```objc
 
 
-NSArray<SWGUser>* *body = [SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
+NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List of user object
 
 @try
 { 
@@ -189,7 +189,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setPassword:@"YOUR_PASSWORD"];
 
 
-NSString* *username = SwaggerClient.NSString*(); // NSString* | The name that needs to be deleted
+NSString* *username = @"username_example"; // NSString* | The name that needs to be deleted
 
 @try
 { 
@@ -242,7 +242,7 @@ Get user by user name
 ```objc
 
 
-NSString* *username = SwaggerClient.NSString*(); // NSString* | The name that needs to be fetched. Use user1 for testing.
+NSString* *username = @"username_example"; // NSString* | The name that needs to be fetched. Use user1 for testing.
 
 @try
 { 
@@ -298,8 +298,8 @@ Logs user into the system
 ```objc
 
 
-NSString* *username = SwaggerClient.NSString*(); // NSString* | The user name for login
-NSString* *password = SwaggerClient.NSString*(); // NSString* | The password for login in clear text
+NSString* *username = @"username_example"; // NSString* | The user name for login
+NSString* *password = @"password_example"; // NSString* | The password for login in clear text
 
 @try
 { 
@@ -406,7 +406,7 @@ This can only be done by the logged in user.
 ```objc
 
 
-NSString* *username = SwaggerClient.NSString*(); // NSString* | name that need to be deleted
+NSString* *username = @"username_example"; // NSString* | name that need to be deleted
 SWGUser* *body = SwaggerClient.SWGUser*(); // SWGUser* | Updated user object
 
 @try
