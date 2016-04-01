@@ -4,17 +4,17 @@ All URIs are relative to *http://petstore.swagger.io/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addPet**](SWGPetApi.md#addPet) | **POST** /pet | Add a new pet to the store
-[**addPetUsingByteArray**](SWGPetApi.md#addPetUsingByteArray) | **POST** /pet?testing_byte_array=true | Fake endpoint to test byte array in body parameter for adding a new pet to the store
-[**deletePet**](SWGPetApi.md#deletePet) | **DELETE** /pet/{petId} | Deletes a pet
-[**findPetsByStatus**](SWGPetApi.md#findPetsByStatus) | **GET** /pet/findByStatus | Finds Pets by status
-[**findPetsByTags**](SWGPetApi.md#findPetsByTags) | **GET** /pet/findByTags | Finds Pets by tags
-[**getPetById**](SWGPetApi.md#getPetById) | **GET** /pet/{petId} | Find pet by ID
-[**getPetByIdInObject**](SWGPetApi.md#getPetByIdInObject) | **GET** /pet/{petId}?response=inline_arbitrary_object | Fake endpoint to test inline arbitrary object return by &#39;Find pet by ID&#39;
-[**petPetIdtestingByteArraytrueGet**](SWGPetApi.md#petPetIdtestingByteArraytrueGet) | **GET** /pet/{petId}?testing_byte_array=true | Fake endpoint to test byte array return by &#39;Find pet by ID&#39;
-[**updatePet**](SWGPetApi.md#updatePet) | **PUT** /pet | Update an existing pet
-[**updatePetWithForm**](SWGPetApi.md#updatePetWithForm) | **POST** /pet/{petId} | Updates a pet in the store with form data
-[**uploadFile**](SWGPetApi.md#uploadFile) | **POST** /pet/{petId}/uploadImage | uploads an image
+[**addPet**](SWGPetApi.md#addpet) | **POST** /pet | Add a new pet to the store
+[**addPetUsingByteArray**](SWGPetApi.md#addpetusingbytearray) | **POST** /pet?testing_byte_array=true | Fake endpoint to test byte array in body parameter for adding a new pet to the store
+[**deletePet**](SWGPetApi.md#deletepet) | **DELETE** /pet/{petId} | Deletes a pet
+[**findPetsByStatus**](SWGPetApi.md#findpetsbystatus) | **GET** /pet/findByStatus | Finds Pets by status
+[**findPetsByTags**](SWGPetApi.md#findpetsbytags) | **GET** /pet/findByTags | Finds Pets by tags
+[**getPetById**](SWGPetApi.md#getpetbyid) | **GET** /pet/{petId} | Find pet by ID
+[**getPetByIdInObject**](SWGPetApi.md#getpetbyidinobject) | **GET** /pet/{petId}?response=inline_arbitrary_object | Fake endpoint to test inline arbitrary object return by &#39;Find pet by ID&#39;
+[**petPetIdtestingByteArraytrueGet**](SWGPetApi.md#petpetidtestingbytearraytrueget) | **GET** /pet/{petId}?testing_byte_array=true | Fake endpoint to test byte array return by &#39;Find pet by ID&#39;
+[**updatePet**](SWGPetApi.md#updatepet) | **PUT** /pet | Update an existing pet
+[**updatePetWithForm**](SWGPetApi.md#updatepetwithform) | **POST** /pet/{petId} | Updates a pet in the store with form data
+[**uploadFile**](SWGPetApi.md#uploadfile) | **POST** /pet/{petId}/uploadImage | uploads an image
 
 
 # **addPet**
@@ -39,7 +39,7 @@ SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to th
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Add a new pet to the store
     [apiInstance addPetWithBody:body
@@ -99,7 +99,7 @@ NSString* body = B; // Pet object in the form of byte array
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Fake endpoint to test byte array in body parameter for adding a new pet to the store
     [apiInstance addPetUsingByteArrayWithBody:body
@@ -161,7 +161,7 @@ NSString* apiKey = @"apiKey_example"; //
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Deletes a pet
     [apiInstance deletePetWithPetId:petId
@@ -223,7 +223,7 @@ NSArray* /* NSString */ status = @[@"available"]; // Status values that need to 
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Finds Pets by status
     [apiInstance findPetsByStatusWithStatus:status
@@ -286,7 +286,7 @@ NSArray* /* NSString */ tags = @[@"tags_example"]; // Tags to filter by
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Finds Pets by tags
     [apiInstance findPetsByTagsWithTags:tags
@@ -354,7 +354,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Find pet by ID
     [apiInstance getPetByIdWithPetId:petId
@@ -422,7 +422,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
     [apiInstance getPetByIdInObjectWithPetId:petId
@@ -490,7 +490,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Fake endpoint to test byte array return by 'Find pet by ID'
     [apiInstance petPetIdtestingByteArraytrueGetWithPetId:petId
@@ -553,7 +553,7 @@ SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to th
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Update an existing pet
     [apiInstance updatePetWithBody:body
@@ -617,7 +617,7 @@ NSString* status = @"status_example"; // Updated status of the pet
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // Updates a pet in the store with form data
     [apiInstance updatePetWithFormWithPetId:petId
@@ -685,7 +685,7 @@ NSURL* file = [[NSURL alloc] init]; // file to upload
 
 @try
 { 
-    SWGSWGPetApi *apiInstance = [[SWGPetApi alloc] init];
+    SWGPetApi *apiInstance = [[SWGPetApi alloc] init];
 
     // uploads an image
     [apiInstance uploadFileWithPetId:petId

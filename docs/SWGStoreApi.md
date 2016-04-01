@@ -4,12 +4,12 @@ All URIs are relative to *http://petstore.swagger.io/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteOrder**](SWGStoreApi.md#deleteOrder) | **DELETE** /store/order/{orderId} | Delete purchase order by ID
-[**findOrdersByStatus**](SWGStoreApi.md#findOrdersByStatus) | **GET** /store/findByStatus | Finds orders by status
-[**getInventory**](SWGStoreApi.md#getInventory) | **GET** /store/inventory | Returns pet inventories by status
-[**getInventoryInObject**](SWGStoreApi.md#getInventoryInObject) | **GET** /store/inventory?response=arbitrary_object | Fake endpoint to test arbitrary object return by &#39;Get inventory&#39;
-[**getOrderById**](SWGStoreApi.md#getOrderById) | **GET** /store/order/{orderId} | Find purchase order by ID
-[**placeOrder**](SWGStoreApi.md#placeOrder) | **POST** /store/order | Place an order for a pet
+[**deleteOrder**](SWGStoreApi.md#deleteorder) | **DELETE** /store/order/{orderId} | Delete purchase order by ID
+[**findOrdersByStatus**](SWGStoreApi.md#findordersbystatus) | **GET** /store/findByStatus | Finds orders by status
+[**getInventory**](SWGStoreApi.md#getinventory) | **GET** /store/inventory | Returns pet inventories by status
+[**getInventoryInObject**](SWGStoreApi.md#getinventoryinobject) | **GET** /store/inventory?response=arbitrary_object | Fake endpoint to test arbitrary object return by &#39;Get inventory&#39;
+[**getOrderById**](SWGStoreApi.md#getorderbyid) | **GET** /store/order/{orderId} | Find purchase order by ID
+[**placeOrder**](SWGStoreApi.md#placeorder) | **POST** /store/order | Place an order for a pet
 
 
 # **deleteOrder**
@@ -29,7 +29,7 @@ NSString* orderId = @"orderId_example"; // ID of the order that needs to be dele
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Delete purchase order by ID
     [apiInstance deleteOrderWithOrderId:orderId
@@ -96,7 +96,7 @@ NSString* status = @"placed"; // Status value that needs to be considered for qu
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Finds orders by status
     [apiInstance findOrdersByStatusWithStatus:status
@@ -160,7 +160,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Returns pet inventories by status
     [apiInstance getInventoryWithCompletionHandler: 
@@ -221,7 +221,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Fake endpoint to test arbitrary object return by 'Get inventory'
     [apiInstance getInventoryInObjectWithCompletionHandler: 
@@ -288,7 +288,7 @@ NSString* orderId = @"orderId_example"; // ID of pet that needs to be fetched
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Find purchase order by ID
     [apiInstance getOrderByIdWithOrderId:orderId
@@ -358,7 +358,7 @@ SWGOrder* body = [[SWGOrder alloc] init]; // order placed for purchasing the pet
 
 @try
 { 
-    SWGSWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
+    SWGStoreApi *apiInstance = [[SWGStoreApi alloc] init];
 
     // Place an order for a pet
     [apiInstance placeOrderWithBody:body

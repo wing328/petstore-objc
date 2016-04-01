@@ -4,14 +4,14 @@ All URIs are relative to *http://petstore.swagger.io/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createUser**](SWGUserApi.md#createUser) | **POST** /user | Create user
-[**createUsersWithArrayInput**](SWGUserApi.md#createUsersWithArrayInput) | **POST** /user/createWithArray | Creates list of users with given input array
-[**createUsersWithListInput**](SWGUserApi.md#createUsersWithListInput) | **POST** /user/createWithList | Creates list of users with given input array
-[**deleteUser**](SWGUserApi.md#deleteUser) | **DELETE** /user/{username} | Delete user
-[**getUserByName**](SWGUserApi.md#getUserByName) | **GET** /user/{username} | Get user by user name
-[**loginUser**](SWGUserApi.md#loginUser) | **GET** /user/login | Logs user into the system
-[**logoutUser**](SWGUserApi.md#logoutUser) | **GET** /user/logout | Logs out current logged in user session
-[**updateUser**](SWGUserApi.md#updateUser) | **PUT** /user/{username} | Updated user
+[**createUser**](SWGUserApi.md#createuser) | **POST** /user | Create user
+[**createUsersWithArrayInput**](SWGUserApi.md#createuserswitharrayinput) | **POST** /user/createWithArray | Creates list of users with given input array
+[**createUsersWithListInput**](SWGUserApi.md#createuserswithlistinput) | **POST** /user/createWithList | Creates list of users with given input array
+[**deleteUser**](SWGUserApi.md#deleteuser) | **DELETE** /user/{username} | Delete user
+[**getUserByName**](SWGUserApi.md#getuserbyname) | **GET** /user/{username} | Get user by user name
+[**loginUser**](SWGUserApi.md#loginuser) | **GET** /user/login | Logs user into the system
+[**logoutUser**](SWGUserApi.md#logoutuser) | **GET** /user/logout | Logs out current logged in user session
+[**updateUser**](SWGUserApi.md#updateuser) | **PUT** /user/{username} | Updated user
 
 
 # **createUser**
@@ -31,7 +31,7 @@ SWGUser* body = [[SWGUser alloc] init]; // Created user object
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Create user
     [apiInstance createUserWithBody:body
@@ -86,7 +86,7 @@ NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Creates list of users with given input array
     [apiInstance createUsersWithArrayInputWithBody:body
@@ -141,7 +141,7 @@ NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Creates list of users with given input array
     [apiInstance createUsersWithListInputWithBody:body
@@ -201,7 +201,7 @@ NSString* username = @"username_example"; // The name that needs to be deleted
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Delete user
     [apiInstance deleteUserWithUsername:username
@@ -256,7 +256,7 @@ NSString* username = @"username_example"; // The name that needs to be fetched. 
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Get user by user name
     [apiInstance getUserByNameWithUsername:username
@@ -316,7 +316,7 @@ NSString* password = @"password_example"; // The password for login in clear tex
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Logs user into the system
     [apiInstance loginUserWithUsername:username
@@ -375,7 +375,7 @@ Logs out current logged in user session
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Logs out current logged in user session
     [apiInstance logoutUserWithCompletionHandler: 
@@ -429,7 +429,7 @@ SWGUser* body = [[SWGUser alloc] init]; // Updated user object
 
 @try
 { 
-    SWGSWGUserApi *apiInstance = [[SWGUserApi alloc] init];
+    SWGUserApi *apiInstance = [[SWGUserApi alloc] init];
 
     // Updated user
     [apiInstance updateUserWithUsername:username
