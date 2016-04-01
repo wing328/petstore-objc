@@ -22,7 +22,7 @@ For valid response try integer IDs with value < 1000. Anything above 1000 or non
 ### Example 
 ```objc
 
-NSString* *orderId = SwaggerClient.NSString*(); // ID of the order that needs to be deleted
+NSString* orderId = @"orderId_example"; // ID of the order that needs to be deleted
 
 @try
 { 
@@ -86,7 +86,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-NSString* *status = SwaggerClient.NSString*(); // Status value that needs to be considered for query (default to placed)
+NSString* status = @"placed"; // Status value that needs to be considered for query (default to placed)
 
 @try
 { 
@@ -269,7 +269,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"test_api_key_query"];
 
 
-NSString* *orderId = SwaggerClient.NSString*(); // ID of pet that needs to be fetched
+NSString* orderId = @"orderId_example"; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -336,7 +336,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-SWGOrder* *body = SwaggerClient.SWGOrder*(); // order placed for purchasing the pet
+SWGOrder* body = SwaggerClient.SWGOrder*(); // order placed for purchasing the pet
 
 @try
 { 

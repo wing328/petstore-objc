@@ -32,7 +32,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* *body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
+SWGPet* body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
 
 @try
 { 
@@ -89,7 +89,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSString* *body = @"B"; // Pet object in the form of byte array
+NSString* body = B; // Pet object in the form of byte array
 
 @try
 { 
@@ -146,8 +146,8 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // Pet id to delete
-NSString* *apiKey = SwaggerClient.NSString*(); // 
+NSNumber* petId = @789; // Pet id to delete
+NSString* apiKey = @"apiKey_example"; // 
 
 @try
 { 
@@ -206,7 +206,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSArray* /* NSString */ *status = @[SwaggerClient.NSString*()]; // Status values that need to be considered for query (default to available)
+NSArray* /* NSString */ status = @[@"available"]; // Status values that need to be considered for query (default to available)
 
 @try
 { 
@@ -266,7 +266,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSArray* /* NSString */ *tags = @[SwaggerClient.NSString*()]; // Tags to filter by
+NSArray* /* NSString */ tags = @[@"tags_example"]; // Tags to filter by
 
 @try
 { 
@@ -331,7 +331,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // ID of pet that needs to be fetched
+NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -396,7 +396,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // ID of pet that needs to be fetched
+NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -461,7 +461,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // ID of pet that needs to be fetched
+NSNumber* petId = @789; // ID of pet that needs to be fetched
 
 @try
 { 
@@ -521,7 +521,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* *body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
+SWGPet* body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
 
 @try
 { 
@@ -578,9 +578,9 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSString* *petId = SwaggerClient.NSString*(); // ID of pet that needs to be updated
-NSString* *name = SwaggerClient.NSString*(); // Updated name of the pet
-NSString* *status = SwaggerClient.NSString*(); // Updated status of the pet
+NSString* petId = @"petId_example"; // ID of pet that needs to be updated
+NSString* name = @"name_example"; // Updated name of the pet
+NSString* status = @"status_example"; // Updated status of the pet
 
 @try
 { 
@@ -641,9 +641,9 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-NSNumber* *petId = @789; // ID of pet to update
-NSString* *additionalMetadata = SwaggerClient.NSString*(); // Additional data to pass to server
-NSURL* *file = SwaggerClient.NSURL*(); // file to upload
+NSNumber* petId = @789; // ID of pet to update
+NSString* additionalMetadata = @"additionalMetadata_example"; // Additional data to pass to server
+NSURL* file = SwaggerClient.NSURL*(); // file to upload
 
 @try
 { 

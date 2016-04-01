@@ -24,7 +24,7 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-SWGUser* *body = SwaggerClient.SWGUser*(); // Created user object
+SWGUser* body = SwaggerClient.SWGUser*(); // Created user object
 
 @try
 { 
@@ -76,7 +76,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // List of user object
+NSArray<SWGUser>* body = @[SwaggerClient.SWGUser()]; // List of user object
 
 @try
 { 
@@ -128,7 +128,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* *body = @[SwaggerClient.SWGUser()]; // List of user object
+NSArray<SWGUser>* body = @[SwaggerClient.SWGUser()]; // List of user object
 
 @try
 { 
@@ -185,7 +185,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setPassword:@"YOUR_PASSWORD"];
 
 
-NSString* *username = SwaggerClient.NSString*(); // The name that needs to be deleted
+NSString* username = @"username_example"; // The name that needs to be deleted
 
 @try
 { 
@@ -237,7 +237,7 @@ Get user by user name
 ### Example 
 ```objc
 
-NSString* *username = SwaggerClient.NSString*(); // The name that needs to be fetched. Use user1 for testing.
+NSString* username = @"username_example"; // The name that needs to be fetched. Use user1 for testing.
 
 @try
 { 
@@ -292,8 +292,8 @@ Logs user into the system
 ### Example 
 ```objc
 
-NSString* *username = SwaggerClient.NSString*(); // The user name for login
-NSString* *password = SwaggerClient.NSString*(); // The password for login in clear text
+NSString* username = @"username_example"; // The user name for login
+NSString* password = @"password_example"; // The password for login in clear text
 
 @try
 { 
@@ -398,8 +398,8 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-NSString* *username = SwaggerClient.NSString*(); // name that need to be deleted
-SWGUser* *body = SwaggerClient.SWGUser*(); // Updated user object
+NSString* username = @"username_example"; // name that need to be deleted
+SWGUser* body = SwaggerClient.SWGUser*(); // Updated user object
 
 @try
 { 
