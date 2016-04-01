@@ -16,8 +16,8 @@ Method | HTTP request | Description
 
 # **createUser**
 ```objc
-- (NSNumber*) createUser: (SWGUser*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) createUserWithBody: (SWGUser*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Create user
@@ -71,8 +71,8 @@ No authorization required
 
 # **createUsersWithArrayInput**
 ```objc
-- (NSNumber*) createUsersWithArrayInput: (NSArray<SWGUser>*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) createUsersWithArrayInputWithBody: (NSArray<SWGUser>*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Creates list of users with given input array
@@ -126,8 +126,8 @@ No authorization required
 
 # **createUsersWithListInput**
 ```objc
-- (NSNumber*) createUsersWithListInput: (NSArray<SWGUser>*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) createUsersWithListInputWithBody: (NSArray<SWGUser>*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Creates list of users with given input array
@@ -181,8 +181,8 @@ No authorization required
 
 # **deleteUser**
 ```objc
-- (NSNumber*) deleteUser: (NSString*) username
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) deleteUserWithUsername: (NSString*) username
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Delete user
@@ -241,8 +241,8 @@ void (empty response body)
 
 # **getUserByName**
 ```objc
-- (NSNumber*) getUserByName: (NSString*) username
-      completionHandler: (void (^)(SWGUser* output, NSError* error)) handler;
+-(NSNumber*) getUserByNameWithUsername: (NSString*) username
+        completionHandler: (void (^)(SWGUser* output, NSError* error)) handler;
 ```
 
 Get user by user name
@@ -299,9 +299,9 @@ No authorization required
 
 # **loginUser**
 ```objc
-- (NSNumber*) loginUser: (NSString*) username
-      (NSString*) password
-      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
+-(NSNumber*) loginUserWithUsername: (NSString*) username
+    password: (NSString*) password
+        completionHandler: (void (^)(NSString* output, NSError* error)) handler;
 ```
 
 Logs user into the system
@@ -361,8 +361,8 @@ No authorization required
 
 # **logoutUser**
 ```objc
-- (NSNumber*) logoutUser: 
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) logoutUserWithCompletionHandler: 
+        (void (^)(NSError* error)) handler;
 ```
 
 Logs out current logged in user session
@@ -412,9 +412,9 @@ No authorization required
 
 # **updateUser**
 ```objc
-- (NSNumber*) updateUser: (NSString*) username
-      (SWGUser*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) updateUserWithUsername: (NSString*) username
+    body: (SWGUser*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Updated user

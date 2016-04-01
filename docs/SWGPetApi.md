@@ -19,8 +19,8 @@ Method | HTTP request | Description
 
 # **addPet**
 ```objc
-- (NSNumber*) addPet: (SWGPet*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) addPetWithBody: (SWGPet*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Add a new pet to the store
@@ -79,8 +79,8 @@ void (empty response body)
 
 # **addPetUsingByteArray**
 ```objc
-- (NSNumber*) addPetUsingByteArray: (NSString*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) addPetUsingByteArrayWithBody: (NSString*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Fake endpoint to test byte array in body parameter for adding a new pet to the store
@@ -139,9 +139,9 @@ void (empty response body)
 
 # **deletePet**
 ```objc
-- (NSNumber*) deletePet: (NSNumber*) petId
-      (NSString*) apiKey
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) deletePetWithPetId: (NSNumber*) petId
+    apiKey: (NSString*) apiKey
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Deletes a pet
@@ -203,8 +203,8 @@ void (empty response body)
 
 # **findPetsByStatus**
 ```objc
-- (NSNumber*) findPetsByStatus: (NSArray* /* NSString */) status
-      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
+-(NSNumber*) findPetsByStatusWithStatus: (NSArray* /* NSString */) status
+        completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
 ```
 
 Finds Pets by status
@@ -266,8 +266,8 @@ Name | Type | Description  | Notes
 
 # **findPetsByTags**
 ```objc
-- (NSNumber*) findPetsByTags: (NSArray* /* NSString */) tags
-      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
+-(NSNumber*) findPetsByTagsWithTags: (NSArray* /* NSString */) tags
+        completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
 ```
 
 Finds Pets by tags
@@ -329,8 +329,8 @@ Name | Type | Description  | Notes
 
 # **getPetById**
 ```objc
-- (NSNumber*) getPetById: (NSNumber*) petId
-      completionHandler: (void (^)(SWGPet* output, NSError* error)) handler;
+-(NSNumber*) getPetByIdWithPetId: (NSNumber*) petId
+        completionHandler: (void (^)(SWGPet* output, NSError* error)) handler;
 ```
 
 Find pet by ID
@@ -397,8 +397,8 @@ Name | Type | Description  | Notes
 
 # **getPetByIdInObject**
 ```objc
-- (NSNumber*) getPetByIdInObject: (NSNumber*) petId
-      completionHandler: (void (^)(SWGInlineResponse200* output, NSError* error)) handler;
+-(NSNumber*) getPetByIdInObjectWithPetId: (NSNumber*) petId
+        completionHandler: (void (^)(SWGInlineResponse200* output, NSError* error)) handler;
 ```
 
 Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
@@ -465,8 +465,8 @@ Name | Type | Description  | Notes
 
 # **petPetIdtestingByteArraytrueGet**
 ```objc
-- (NSNumber*) petPetIdtestingByteArraytrueGet: (NSNumber*) petId
-      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
+-(NSNumber*) petPetIdtestingByteArraytrueGetWithPetId: (NSNumber*) petId
+        completionHandler: (void (^)(NSString* output, NSError* error)) handler;
 ```
 
 Fake endpoint to test byte array return by 'Find pet by ID'
@@ -533,8 +533,8 @@ Name | Type | Description  | Notes
 
 # **updatePet**
 ```objc
-- (NSNumber*) updatePet: (SWGPet*) body
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) updatePetWithBody: (SWGPet*) body
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Update an existing pet
@@ -593,10 +593,10 @@ void (empty response body)
 
 # **updatePetWithForm**
 ```objc
-- (NSNumber*) updatePetWithForm: (NSString*) petId
-      (NSString*) name
-      (NSString*) status
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) updatePetWithFormWithPetId: (NSString*) petId
+    name: (NSString*) name
+    status: (NSString*) status
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Updates a pet in the store with form data
@@ -661,10 +661,10 @@ void (empty response body)
 
 # **uploadFile**
 ```objc
-- (NSNumber*) uploadFile: (NSNumber*) petId
-      (NSString*) additionalMetadata
-      (NSURL*) file
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) uploadFileWithPetId: (NSNumber*) petId
+    additionalMetadata: (NSString*) additionalMetadata
+    file: (NSURL*) file
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 uploads an image

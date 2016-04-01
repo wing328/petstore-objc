@@ -14,8 +14,8 @@ Method | HTTP request | Description
 
 # **deleteOrder**
 ```objc
-- (NSNumber*) deleteOrder: (NSString*) orderId
-      completionHandler: (void (^)(NSError* error)) handler;
+-(NSNumber*) deleteOrderWithOrderId: (NSString*) orderId
+        completionHandler: (void (^)(NSError* error)) handler;
 ```
 
 Delete purchase order by ID
@@ -69,8 +69,8 @@ No authorization required
 
 # **findOrdersByStatus**
 ```objc
-- (NSNumber*) findOrdersByStatus: (NSString*) status
-      completionHandler: (void (^)(NSArray<SWGOrder>* output, NSError* error)) handler;
+-(NSNumber*) findOrdersByStatusWithStatus: (NSString*) status
+        completionHandler: (void (^)(NSArray<SWGOrder>* output, NSError* error)) handler;
 ```
 
 Finds orders by status
@@ -139,8 +139,8 @@ Name | Type | Description  | Notes
 
 # **getInventory**
 ```objc
-- (NSNumber*) getInventory: 
-      completionHandler: (void (^)(NSDictionary* /* NSString, NSNumber */ output, NSError* error)) handler;
+-(NSNumber*) getInventoryWithCompletionHandler: 
+        (void (^)(NSDictionary* /* NSString, NSNumber */ output, NSError* error)) handler;
 ```
 
 Returns pet inventories by status
@@ -200,8 +200,8 @@ This endpoint does not need any parameter.
 
 # **getInventoryInObject**
 ```objc
-- (NSNumber*) getInventoryInObject: 
-      completionHandler: (void (^)(NSObject* output, NSError* error)) handler;
+-(NSNumber*) getInventoryInObjectWithCompletionHandler: 
+        (void (^)(NSObject* output, NSError* error)) handler;
 ```
 
 Fake endpoint to test arbitrary object return by 'Get inventory'
@@ -261,8 +261,8 @@ This endpoint does not need any parameter.
 
 # **getOrderById**
 ```objc
-- (NSNumber*) getOrderById: (NSString*) orderId
-      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+-(NSNumber*) getOrderByIdWithOrderId: (NSString*) orderId
+        completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
 ```
 
 Find purchase order by ID
@@ -331,8 +331,8 @@ Name | Type | Description  | Notes
 
 # **placeOrder**
 ```objc
-- (NSNumber*) placeOrder: (SWGOrder*) body
-      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+-(NSNumber*) placeOrderWithBody: (SWGOrder*) body
+        completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
 ```
 
 Place an order for a pet
