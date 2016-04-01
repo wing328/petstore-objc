@@ -42,7 +42,6 @@ NSString* *orderId = SwaggerClient.NSString*(); // NSString* | ID of the order t
     NSLog(@"Exception when calling SWGStoreApi->deleteOrder: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -111,7 +110,6 @@ NSString* *status = SwaggerClient.NSString*(); // NSString* | Status value that 
     NSLog(@"Exception when calling SWGStoreApi->findOrdersByStatus: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -174,7 +172,6 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
     NSLog(@"Exception when calling SWGStoreApi->getInventory: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -234,7 +231,6 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
     NSLog(@"Exception when calling SWGStoreApi->getInventoryInObject: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -300,7 +296,6 @@ NSString* *orderId = SwaggerClient.NSString*(); // NSString* | ID of pet that ne
     NSLog(@"Exception when calling SWGStoreApi->getOrderById: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -369,7 +364,6 @@ SWGOrder* *body = SwaggerClient.SWGOrder*(); // SWGOrder* | order placed for pur
     NSLog(@"Exception when calling SWGStoreApi->placeOrder: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters

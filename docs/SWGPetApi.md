@@ -52,7 +52,6 @@ SWGPet* *body = SwaggerClient.SWGPet*(); // SWGPet* | Pet object that needs to b
     NSLog(@"Exception when calling SWGPetApi->addPet: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -111,7 +110,6 @@ NSString* *body = 'B'; // NSString* | Pet object in the form of byte array
     NSLog(@"Exception when calling SWGPetApi->addPetUsingByteArray: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -172,7 +170,6 @@ NSString* *apiKey = SwaggerClient.NSString*(); // NSString* |
     NSLog(@"Exception when calling SWGPetApi->deletePet: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -235,7 +232,6 @@ NSArray* /* NSString */ *status = [SwaggerClient.NSString*()]; // NSArray* /* NS
     NSLog(@"Exception when calling SWGPetApi->findPetsByStatus: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -297,7 +293,6 @@ NSArray* /* NSString */ *tags = [SwaggerClient.NSString*()]; // NSArray* /* NSSt
     NSLog(@"Exception when calling SWGPetApi->findPetsByTags: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -364,7 +359,6 @@ NSNumber* *petId = SwaggerClient.NSNumber*(); // NSNumber* | ID of pet that need
     NSLog(@"Exception when calling SWGPetApi->getPetById: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -431,7 +425,6 @@ NSNumber* *petId = SwaggerClient.NSNumber*(); // NSNumber* | ID of pet that need
     NSLog(@"Exception when calling SWGPetApi->getPetByIdInObject: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -498,7 +491,6 @@ NSNumber* *petId = SwaggerClient.NSNumber*(); // NSNumber* | ID of pet that need
     NSLog(@"Exception when calling SWGPetApi->petPetIdtestingByteArraytrueGet: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -557,7 +549,6 @@ SWGPet* *body = SwaggerClient.SWGPet*(); // SWGPet* | Pet object that needs to b
     NSLog(@"Exception when calling SWGPetApi->updatePet: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -620,7 +611,6 @@ NSString* *status = SwaggerClient.NSString*(); // NSString* | Updated status of 
     NSLog(@"Exception when calling SWGPetApi->updatePetWithForm: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -685,7 +675,6 @@ NSURL* *file = SwaggerClient.NSURL*(); // NSURL* | file to upload
     NSLog(@"Exception when calling SWGPetApi->uploadFile: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters

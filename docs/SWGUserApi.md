@@ -44,7 +44,6 @@ SWGUser* *body = SwaggerClient.SWGUser*(); // SWGUser* | Created user object
     NSLog(@"Exception when calling SWGUserApi->createUser: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -98,7 +97,6 @@ NSArray<SWGUser>* *body = [SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List
     NSLog(@"Exception when calling SWGUserApi->createUsersWithArrayInput: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -152,7 +150,6 @@ NSArray<SWGUser>* *body = [SwaggerClient.SWGUser()]; // NSArray<SWGUser>* | List
     NSLog(@"Exception when calling SWGUserApi->createUsersWithListInput: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -211,7 +208,6 @@ NSString* *username = SwaggerClient.NSString*(); // NSString* | The name that ne
     NSLog(@"Exception when calling SWGUserApi->deleteUser: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -268,7 +264,6 @@ NSString* *username = SwaggerClient.NSString*(); // NSString* | The name that ne
     NSLog(@"Exception when calling SWGUserApi->getUserByName: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -327,7 +322,6 @@ NSString* *password = SwaggerClient.NSString*(); // NSString* | The password for
     NSLog(@"Exception when calling SWGUserApi->loginUser: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -381,7 +375,6 @@ Logs out current logged in user session
     NSLog(@"Exception when calling SWGUserApi->logoutUser: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
@@ -434,7 +427,6 @@ SWGUser* *body = SwaggerClient.SWGUser*(); // SWGUser* | Updated user object
     NSLog(@"Exception when calling SWGUserApi->updateUser: %@ ", exception.name);
     NSLog(@"Reason: %@ ", exception.reason);
 }
-?>
 ```
 
 ### Parameters
