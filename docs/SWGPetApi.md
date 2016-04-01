@@ -681,7 +681,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 NSNumber* petId = @789; // ID of pet to update
 NSString* additionalMetadata = @"additionalMetadata_example"; // Additional data to pass to server
-NSURL* file = [[NSURL alloc] init]; // file to upload
+NSURL* file = [NSURL fileURLWithPath:@"/path/to/file.txt"]; // file to upload
 
 @try
 { 
