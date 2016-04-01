@@ -13,9 +13,10 @@ Method | HTTP request | Description
 
 
 # **deleteOrder**
-> (NSNumber\*) deleteOrder: (NSString*) orderId
->      completionHandler: (void (^)(NSError\* error)) handler;
-
+```objc
+- (NSNumber*) deleteOrder: (NSString*) orderId
+      completionHandler: (void (^)(NSError* error)) handler;
+```
 
 Delete purchase order by ID
 
@@ -67,9 +68,10 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findOrdersByStatus**
-> (NSNumber\*) findOrdersByStatus: (NSString*) status
->      completionHandler: (void (^)(NSArray<SWGOrder>* output, NSError\* error)) handler;
-
+```objc
+- (NSNumber*) findOrdersByStatus: (NSString*) status
+      completionHandler: (void (^)(NSArray<SWGOrder>* output, NSError* error)) handler;
+```
 
 Finds orders by status
 
@@ -136,9 +138,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getInventory**
-> (NSNumber\*) getInventory: 
->      completionHandler: (void (^)(NSDictionary* /* NSString, NSNumber */ output, NSError\* error)) handler;
-
+```objc
+- (NSNumber*) getInventory: 
+      completionHandler: (void (^)(NSDictionary* /* NSString, NSNumber */ output, NSError* error)) handler;
+```
 
 Returns pet inventories by status
 
@@ -196,9 +199,10 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getInventoryInObject**
-> (NSNumber\*) getInventoryInObject: 
->      completionHandler: (void (^)(NSObject* output, NSError\* error)) handler;
-
+```objc
+- (NSNumber*) getInventoryInObject: 
+      completionHandler: (void (^)(NSObject* output, NSError* error)) handler;
+```
 
 Fake endpoint to test arbitrary object return by 'Get inventory'
 
@@ -256,9 +260,10 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getOrderById**
-> (NSNumber\*) getOrderById: (NSString*) orderId
->      completionHandler: (void (^)(SWGOrder* output, NSError\* error)) handler;
-
+```objc
+- (NSNumber*) getOrderById: (NSString*) orderId
+      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+```
 
 Find purchase order by ID
 
@@ -325,9 +330,10 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **placeOrder**
-> (NSNumber\*) placeOrder: (SWGOrder*) body
->      completionHandler: (void (^)(SWGOrder* output, NSError\* error)) handler;
-
+```objc
+- (NSNumber*) placeOrder: (SWGOrder*) body
+      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+```
 
 Place an order for a pet
 
