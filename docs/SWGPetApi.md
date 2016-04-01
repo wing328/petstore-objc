@@ -18,7 +18,9 @@ Method | HTTP request | Description
 
 
 # **addPet**
-> addPet($body)
+> (NSNumber*) addPet}: (SWGPet*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Add a new pet to the store
 
@@ -32,7 +34,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* body = [[SWGPet alloc] init error:nil]; // Pet object that needs to be added to the store
+SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to the store
 
 @try
 { 
@@ -75,7 +77,9 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **addPetUsingByteArray**
-> addPetUsingByteArray($body)
+> (NSNumber*) addPetUsingByteArray}: (NSString*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Fake endpoint to test byte array in body parameter for adding a new pet to the store
 
@@ -132,7 +136,10 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletePet**
-> deletePet($petId, $apiKey)
+> (NSNumber*) deletePet}: (NSNumber*) petId
+>      (NSString*) apiKey
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Deletes a pet
 
@@ -192,7 +199,9 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findPetsByStatus**
-> NSArray<SWGPet>* findPetsByStatus($status)
+> (NSNumber*) findPetsByStatus}: (NSArray* /* NSString */) status
+>      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
+
 
 Finds Pets by status
 
@@ -252,7 +261,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findPetsByTags**
-> NSArray<SWGPet>* findPetsByTags($tags)
+> (NSNumber*) findPetsByTags}: (NSArray* /* NSString */) tags
+>      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
+
 
 Finds Pets by tags
 
@@ -312,7 +323,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPetById**
-> SWGPet* getPetById($petId)
+> (NSNumber*) getPetById}: (NSNumber*) petId
+>      completionHandler: (void (^)(SWGPet* output, NSError* error)) handler;
+
 
 Find pet by ID
 
@@ -377,7 +390,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPetByIdInObject**
-> SWGInlineResponse200* getPetByIdInObject($petId)
+> (NSNumber*) getPetByIdInObject}: (NSNumber*) petId
+>      completionHandler: (void (^)(SWGInlineResponse200* output, NSError* error)) handler;
+
 
 Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
 
@@ -442,7 +457,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **petPetIdtestingByteArraytrueGet**
-> NSString* petPetIdtestingByteArraytrueGet($petId)
+> (NSNumber*) petPetIdtestingByteArraytrueGet}: (NSNumber*) petId
+>      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
+
 
 Fake endpoint to test byte array return by 'Find pet by ID'
 
@@ -507,7 +524,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updatePet**
-> updatePet($body)
+> (NSNumber*) updatePet}: (SWGPet*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Update an existing pet
 
@@ -521,7 +540,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* body = [[SWGPet alloc] init error:nil]; // Pet object that needs to be added to the store
+SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to the store
 
 @try
 { 
@@ -564,7 +583,11 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updatePetWithForm**
-> updatePetWithForm($petId, $name, $status)
+> (NSNumber*) updatePetWithForm}: (NSString*) petId
+>      (NSString*) name
+>      (NSString*) status
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Updates a pet in the store with form data
 
@@ -627,7 +650,11 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **uploadFile**
-> uploadFile($petId, $additionalMetadata, $file)
+> (NSNumber*) uploadFile}: (NSNumber*) petId
+>      (NSString*) additionalMetadata
+>      (NSURL*) file
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 uploads an image
 
@@ -643,7 +670,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 NSNumber* petId = @789; // ID of pet to update
 NSString* additionalMetadata = @"additionalMetadata_example"; // Additional data to pass to server
-NSURL* file = [[NSURL alloc] init error:nil]; // file to upload
+NSURL* file = [[NSURL alloc] init]; // file to upload
 
 @try
 { 

@@ -13,7 +13,9 @@ Method | HTTP request | Description
 
 
 # **deleteOrder**
-> deleteOrder($orderId)
+> (NSNumber*) deleteOrder}: (NSString*) orderId
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Delete purchase order by ID
 
@@ -65,7 +67,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findOrdersByStatus**
-> NSArray<SWGOrder>* findOrdersByStatus($status)
+> (NSNumber*) findOrdersByStatus}: (NSString*) status
+>      completionHandler: (void (^)(NSArray<SWGOrder>* output, NSError* error)) handler;
+
 
 Finds orders by status
 
@@ -132,7 +136,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getInventory**
-> NSDictionary* /* NSString, NSNumber */ getInventory()
+> (NSNumber*) getInventory}: 
+>      completionHandler: (void (^)(NSDictionary* /* NSString, NSNumber */ output, NSError* error)) handler;
+
 
 Returns pet inventories by status
 
@@ -190,7 +196,9 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getInventoryInObject**
-> NSObject* getInventoryInObject()
+> (NSNumber*) getInventoryInObject}: 
+>      completionHandler: (void (^)(NSObject* output, NSError* error)) handler;
+
 
 Fake endpoint to test arbitrary object return by 'Get inventory'
 
@@ -248,7 +256,9 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getOrderById**
-> SWGOrder* getOrderById($orderId)
+> (NSNumber*) getOrderById}: (NSString*) orderId
+>      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+
 
 Find purchase order by ID
 
@@ -315,7 +325,9 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **placeOrder**
-> SWGOrder* placeOrder($body)
+> (NSNumber*) placeOrder}: (SWGOrder*) body
+>      completionHandler: (void (^)(SWGOrder* output, NSError* error)) handler;
+
 
 Place an order for a pet
 
@@ -336,7 +348,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-SWGOrder* body = [[SWGOrder alloc] init error:nil]; // order placed for purchasing the pet
+SWGOrder* body = [[SWGOrder alloc] init]; // order placed for purchasing the pet
 
 @try
 { 

@@ -15,7 +15,9 @@ Method | HTTP request | Description
 
 
 # **createUser**
-> createUser($body)
+> (NSNumber*) createUser}: (SWGUser*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Create user
 
@@ -24,7 +26,7 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-SWGUser* body = [[SWGUser alloc] init error:nil]; // Created user object
+SWGUser* body = [[SWGUser alloc] init]; // Created user object
 
 @try
 { 
@@ -67,7 +69,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createUsersWithArrayInput**
-> createUsersWithArrayInput($body)
+> (NSNumber*) createUsersWithArrayInput}: (NSArray<SWGUser>*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Creates list of users with given input array
 
@@ -76,7 +80,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* body = @[[[SWGUser alloc] init error:nil]]; // List of user object
+NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
 @try
 { 
@@ -119,7 +123,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createUsersWithListInput**
-> createUsersWithListInput($body)
+> (NSNumber*) createUsersWithListInput}: (NSArray<SWGUser>*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Creates list of users with given input array
 
@@ -128,7 +134,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* body = @[[[SWGUser alloc] init error:nil]]; // List of user object
+NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
 @try
 { 
@@ -171,7 +177,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deleteUser**
-> deleteUser($username)
+> (NSNumber*) deleteUser}: (NSString*) username
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Delete user
 
@@ -228,7 +236,9 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getUserByName**
-> SWGUser* getUserByName($username)
+> (NSNumber*) getUserByName}: (NSString*) username
+>      completionHandler: (void (^)(SWGUser* output, NSError* error)) handler;
+
 
 Get user by user name
 
@@ -283,7 +293,10 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **loginUser**
-> NSString* loginUser($username, $password)
+> (NSNumber*) loginUser}: (NSString*) username
+>      (NSString*) password
+>      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
+
 
 Logs user into the system
 
@@ -341,7 +354,9 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **logoutUser**
-> logoutUser()
+> (NSNumber*) logoutUser}: 
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Logs out current logged in user session
 
@@ -389,7 +404,10 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updateUser**
-> updateUser($username, $body)
+> (NSNumber*) updateUser}: (NSString*) username
+>      (SWGUser*) body
+>      completionHandler: (void (^)(NSError* error)) handler;
+
 
 Updated user
 
@@ -399,7 +417,7 @@ This can only be done by the logged in user.
 ```objc
 
 NSString* username = @"username_example"; // name that need to be deleted
-SWGUser* body = [[SWGUser alloc] init error:nil]; // Updated user object
+SWGUser* body = [[SWGUser alloc] init]; // Updated user object
 
 @try
 { 
