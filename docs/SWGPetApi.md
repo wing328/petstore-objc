@@ -43,7 +43,7 @@ SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to th
 
     // Add a new pet to the store
     [apiInstance addPetWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -103,7 +103,7 @@ NSString* body = B; // Pet object in the form of byte array
 
     // Fake endpoint to test byte array in body parameter for adding a new pet to the store
     [apiInstance addPetUsingByteArrayWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -165,8 +165,8 @@ NSString* apiKey = @"apiKey_example"; //
 
     // Deletes a pet
     [apiInstance deletePetWithPetId:petId
-    apiKey:apiKey
-              completionHandler: ^(NSError* error)) {
+                  apiKey:apiKey
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -227,7 +227,7 @@ NSArray* /* NSString */ status = @[@"available"]; // Status values that need to 
 
     // Finds Pets by status
     [apiInstance findPetsByStatusWithStatus:status
-              completionHandler: ^(NSArray<SWGPet>* output, NSError* error)) {
+              completionHandler: ^(NSArray<SWGPet>* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -290,7 +290,7 @@ NSArray* /* NSString */ tags = @[@"tags_example"]; // Tags to filter by
 
     // Finds Pets by tags
     [apiInstance findPetsByTagsWithTags:tags
-              completionHandler: ^(NSArray<SWGPet>* output, NSError* error)) {
+              completionHandler: ^(NSArray<SWGPet>* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -358,7 +358,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
     // Find pet by ID
     [apiInstance getPetByIdWithPetId:petId
-              completionHandler: ^(SWGPet* output, NSError* error)) {
+              completionHandler: ^(SWGPet* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -426,7 +426,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
     // Fake endpoint to test inline arbitrary object return by 'Find pet by ID'
     [apiInstance getPetByIdInObjectWithPetId:petId
-              completionHandler: ^(SWGInlineResponse200* output, NSError* error)) {
+              completionHandler: ^(SWGInlineResponse200* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -494,7 +494,7 @@ NSNumber* petId = @789; // ID of pet that needs to be fetched
 
     // Fake endpoint to test byte array return by 'Find pet by ID'
     [apiInstance petPetIdtestingByteArraytrueGetWithPetId:petId
-              completionHandler: ^(NSString* output, NSError* error)) {
+              completionHandler: ^(NSString* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -557,7 +557,7 @@ SWGPet* body = [[SWGPet alloc] init]; // Pet object that needs to be added to th
 
     // Update an existing pet
     [apiInstance updatePetWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -621,9 +621,9 @@ NSString* status = @"status_example"; // Updated status of the pet
 
     // Updates a pet in the store with form data
     [apiInstance updatePetWithFormWithPetId:petId
-    name:name
-    status:status
-              completionHandler: ^(NSError* error)) {
+                  name:name
+                  status:status
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -689,9 +689,9 @@ NSURL* file = [[NSURL alloc] init]; // file to upload
 
     // uploads an image
     [apiInstance uploadFileWithPetId:petId
-    additionalMetadata:additionalMetadata
-    file:file
-              completionHandler: ^(NSError* error)) {
+                  additionalMetadata:additionalMetadata
+                  file:file
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }

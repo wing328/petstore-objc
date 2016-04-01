@@ -35,7 +35,7 @@ SWGUser* body = [[SWGUser alloc] init]; // Created user object
 
     // Create user
     [apiInstance createUserWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -90,7 +90,7 @@ NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
     // Creates list of users with given input array
     [apiInstance createUsersWithArrayInputWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -145,7 +145,7 @@ NSArray<SWGUser>* body = @[[[SWGUser alloc] init]]; // List of user object
 
     // Creates list of users with given input array
     [apiInstance createUsersWithListInputWithBody:body
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -205,7 +205,7 @@ NSString* username = @"username_example"; // The name that needs to be deleted
 
     // Delete user
     [apiInstance deleteUserWithUsername:username
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -260,7 +260,7 @@ NSString* username = @"username_example"; // The name that needs to be fetched. 
 
     // Get user by user name
     [apiInstance getUserByNameWithUsername:username
-              completionHandler: ^(SWGUser* output, NSError* error)) {
+              completionHandler: ^(SWGUser* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -320,8 +320,8 @@ NSString* password = @"password_example"; // The password for login in clear tex
 
     // Logs user into the system
     [apiInstance loginUserWithUsername:username
-    password:password
-              completionHandler: ^(NSString* output, NSError* error)) {
+                  password:password
+              completionHandler: ^(NSString* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -379,7 +379,7 @@ Logs out current logged in user session
 
     // Logs out current logged in user session
     [apiInstance logoutUserWithCompletionHandler: 
-              ^(NSError* error)) {
+              ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -433,8 +433,8 @@ SWGUser* body = [[SWGUser alloc] init]; // Updated user object
 
     // Updated user
     [apiInstance updateUserWithUsername:username
-    body:body
-              completionHandler: ^(NSError* error)) {
+                  body:body
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }

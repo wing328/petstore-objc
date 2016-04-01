@@ -33,7 +33,7 @@ NSString* orderId = @"orderId_example"; // ID of the order that needs to be dele
 
     // Delete purchase order by ID
     [apiInstance deleteOrderWithOrderId:orderId
-              completionHandler: ^(NSError* error)) {
+              completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
                             }
@@ -100,7 +100,7 @@ NSString* status = @"placed"; // Status value that needs to be considered for qu
 
     // Finds orders by status
     [apiInstance findOrdersByStatusWithStatus:status
-              completionHandler: ^(NSArray<SWGOrder>* output, NSError* error)) {
+              completionHandler: ^(NSArray<SWGOrder>* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -164,7 +164,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
     // Returns pet inventories by status
     [apiInstance getInventoryWithCompletionHandler: 
-              ^(NSDictionary* /* NSString, NSNumber */ output, NSError* error)) {
+              ^(NSDictionary* /* NSString, NSNumber */ output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -225,7 +225,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
     // Fake endpoint to test arbitrary object return by 'Get inventory'
     [apiInstance getInventoryInObjectWithCompletionHandler: 
-              ^(NSObject* output, NSError* error)) {
+              ^(NSObject* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -292,7 +292,7 @@ NSString* orderId = @"orderId_example"; // ID of pet that needs to be fetched
 
     // Find purchase order by ID
     [apiInstance getOrderByIdWithOrderId:orderId
-              completionHandler: ^(SWGOrder* output, NSError* error)) {
+              completionHandler: ^(SWGOrder* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -362,7 +362,7 @@ SWGOrder* body = [[SWGOrder alloc] init]; // order placed for purchasing the pet
 
     // Place an order for a pet
     [apiInstance placeOrderWithBody:body
-              completionHandler: ^(SWGOrder* output, NSError* error)) {
+              completionHandler: ^(SWGOrder* output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
