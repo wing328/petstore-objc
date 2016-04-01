@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **createUser**
-> (NSNumber*) createUser}: (SWGUser*) body
+> (NSNumber*) createUser: (SWGUser*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -69,7 +69,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createUsersWithArrayInput**
-> (NSNumber*) createUsersWithArrayInput}: (NSArray<SWGUser>*) body
+> (NSNumber*) createUsersWithArrayInput: (NSArray<SWGUser>*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -123,7 +123,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createUsersWithListInput**
-> (NSNumber*) createUsersWithListInput}: (NSArray<SWGUser>*) body
+> (NSNumber*) createUsersWithListInput: (NSArray<SWGUser>*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -177,7 +177,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deleteUser**
-> (NSNumber*) deleteUser}: (NSString*) username
+> (NSNumber*) deleteUser: (NSString*) username
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -236,7 +236,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getUserByName**
-> (NSNumber*) getUserByName}: (NSString*) username
+> (NSNumber*) getUserByName: (NSString*) username
 >      completionHandler: (void (^)(SWGUser* output, NSError* error)) handler;
 
 
@@ -293,7 +293,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **loginUser**
-> (NSNumber*) loginUser}: (NSString*) username
+> (NSNumber*) loginUser: (NSString*) username
 >      (NSString*) password
 >      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
 
@@ -354,7 +354,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **logoutUser**
-> (NSNumber*) logoutUser}: 
+> (NSNumber*) logoutUser: 
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -404,7 +404,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updateUser**
-> (NSNumber*) updateUser}: (NSString*) username
+> (NSNumber*) updateUser: (NSString*) username
 >      (SWGUser*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 

@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **addPet**
-> (NSNumber*) addPet}: (SWGPet*) body
+> (NSNumber*) addPet: (SWGPet*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -77,7 +77,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **addPetUsingByteArray**
-> (NSNumber*) addPetUsingByteArray}: (NSString*) body
+> (NSNumber*) addPetUsingByteArray: (NSString*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -136,7 +136,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **deletePet**
-> (NSNumber*) deletePet}: (NSNumber*) petId
+> (NSNumber*) deletePet: (NSNumber*) petId
 >      (NSString*) apiKey
 >      completionHandler: (void (^)(NSError* error)) handler;
 
@@ -199,7 +199,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findPetsByStatus**
-> (NSNumber*) findPetsByStatus}: (NSArray* /* NSString */) status
+> (NSNumber*) findPetsByStatus: (NSArray* /* NSString */) status
 >      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
 
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **findPetsByTags**
-> (NSNumber*) findPetsByTags}: (NSArray* /* NSString */) tags
+> (NSNumber*) findPetsByTags: (NSArray* /* NSString */) tags
 >      completionHandler: (void (^)(NSArray<SWGPet>* output, NSError* error)) handler;
 
 
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPetById**
-> (NSNumber*) getPetById}: (NSNumber*) petId
+> (NSNumber*) getPetById: (NSNumber*) petId
 >      completionHandler: (void (^)(SWGPet* output, NSError* error)) handler;
 
 
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPetByIdInObject**
-> (NSNumber*) getPetByIdInObject}: (NSNumber*) petId
+> (NSNumber*) getPetByIdInObject: (NSNumber*) petId
 >      completionHandler: (void (^)(SWGInlineResponse200* output, NSError* error)) handler;
 
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **petPetIdtestingByteArraytrueGet**
-> (NSNumber*) petPetIdtestingByteArraytrueGet}: (NSNumber*) petId
+> (NSNumber*) petPetIdtestingByteArraytrueGet: (NSNumber*) petId
 >      completionHandler: (void (^)(NSString* output, NSError* error)) handler;
 
 
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updatePet**
-> (NSNumber*) updatePet}: (SWGPet*) body
+> (NSNumber*) updatePet: (SWGPet*) body
 >      completionHandler: (void (^)(NSError* error)) handler;
 
 
@@ -583,7 +583,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **updatePetWithForm**
-> (NSNumber*) updatePetWithForm}: (NSString*) petId
+> (NSNumber*) updatePetWithForm: (NSString*) petId
 >      (NSString*) name
 >      (NSString*) status
 >      completionHandler: (void (^)(NSError* error)) handler;
@@ -650,7 +650,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **uploadFile**
-> (NSNumber*) uploadFile}: (NSNumber*) petId
+> (NSNumber*) uploadFile: (NSNumber*) petId
 >      (NSString*) additionalMetadata
 >      (NSURL*) file
 >      completionHandler: (void (^)(NSError* error)) handler;
