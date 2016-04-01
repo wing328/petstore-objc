@@ -1,4 +1,4 @@
-# \SWGStoreApi
+# SWGStoreApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -336,7 +336,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 //[apiConfig setApiKeyPrefix:@"BEARER" forApiKeyIdentifier:@"x-test_api_client_secret"];
 
 
-SWGOrder* body = SwaggerClient.SWGOrder*(); // order placed for purchasing the pet
+SWGOrder* body = [[SWGOrder alloc] init error:nil]; // order placed for purchasing the pet
 
 @try
 { 

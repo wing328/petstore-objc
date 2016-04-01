@@ -1,4 +1,4 @@
-# \SWGPetApi
+# SWGPetApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -32,7 +32,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
+SWGPet* body = [[SWGPet alloc] init error:nil]; // Pet object that needs to be added to the store
 
 @try
 { 
@@ -521,7 +521,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 [apiConfig setAccessToken:@"YOUR_ACCESS_TOKEN"];
 
 
-SWGPet* body = SwaggerClient.SWGPet*(); // Pet object that needs to be added to the store
+SWGPet* body = [[SWGPet alloc] init error:nil]; // Pet object that needs to be added to the store
 
 @try
 { 
@@ -643,7 +643,7 @@ SWGConfiguration *apiConfig = [SWGConfiguration sharedConfig];
 
 NSNumber* petId = @789; // ID of pet to update
 NSString* additionalMetadata = @"additionalMetadata_example"; // Additional data to pass to server
-NSURL* file = SwaggerClient.NSURL*(); // file to upload
+NSURL* file = [[NSURL alloc] init error:nil]; // file to upload
 
 @try
 { 

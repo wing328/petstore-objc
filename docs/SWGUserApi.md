@@ -1,4 +1,4 @@
-# \SWGUserApi
+# SWGUserApi
 
 All URIs are relative to *http://petstore.swagger.io/v2*
 
@@ -24,7 +24,7 @@ This can only be done by the logged in user.
 ### Example 
 ```objc
 
-SWGUser* body = SwaggerClient.SWGUser*(); // Created user object
+SWGUser* body = [[SWGUser alloc] init error:nil]; // Created user object
 
 @try
 { 
@@ -76,7 +76,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* body = @[SwaggerClient.SWGUser()]; // List of user object
+NSArray<SWGUser>* body = @[[[SWGUser alloc] init error:nil]]; // List of user object
 
 @try
 { 
@@ -128,7 +128,7 @@ Creates list of users with given input array
 ### Example 
 ```objc
 
-NSArray<SWGUser>* body = @[SwaggerClient.SWGUser()]; // List of user object
+NSArray<SWGUser>* body = @[[[SWGUser alloc] init error:nil]]; // List of user object
 
 @try
 { 
@@ -399,7 +399,7 @@ This can only be done by the logged in user.
 ```objc
 
 NSString* username = @"username_example"; // name that need to be deleted
-SWGUser* body = SwaggerClient.SWGUser*(); // Updated user object
+SWGUser* body = [[SWGUser alloc] init error:nil]; // Updated user object
 
 @try
 { 
